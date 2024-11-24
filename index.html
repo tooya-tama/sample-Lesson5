@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <!--  metaタグ title、descriptionは基本必須で設定　-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Diary</title>
+    <link rel="icon" href="img/favicon.ico" >
+    <!-- リセットCSS　 本サイトでは、「ress.min.css」を使用しています。リセットCSSは色々なものがあるので、自分が使いやすいものを選んだり、案件によって使い分け-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- body内　mainとfooterの枠だけコーディング-->
+    <main>
+        <!--  メインビジュアルは、画像をdivタグで囲む　-->
+        <div id="mainvisual">
+            <img src="img/mainvisual.jpg" alt=""> 
+        </div>
+        
+        <!-- 全体をdivタグで囲む　後ほど、CSSで中央寄せやmargin、paddingの設定 　-->
+        <div class="text">
+            <!-- サイト全体のタイトルになるので、h1タグで囲む 　-->
+            <h1 class="site-title">Recipe Diary</h1>
+            <p>
+                日々の料理レシピをまとめています。<br>
+                和食や洋食、中華、お菓子までいろいろな料理レシピをアップしていますので、<br>
+                みなさんの献立にお役立てくださいね！
+            </p>
+        </div>
+
+        <!--  画像の横並びは、ul、liタグで記述　-->
+        <ul class="flex">
+            <li><img src="img/recipe1.jpg" alt=""></li>
+            <li><img src="img/recipe2.jpg" alt=""></li>
+            <li><img src="img/recipe3.jpg" alt=""></li>
+        </ul>
+
+        <!--  全体をdivタグで囲み、中のボタンを中央寄せ ボタンはaタグで記述してリンク　-->
+        <div class="text">
+            <a class="btn" href="#">レシピ一覧を見る</a>
+        </div>
+    </main>
+
+    <!--  全体 footerタグで囲む　-->
+    <footer id="footer">
+        <!--  SNSリンク SNSのリンク集という一つの意味をもったリスト群になるので、ul、liタグで記述　-->
+        <ul class="sns">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+        <p>&copy;2021 Recipe Diary</p>
+    </footer>
+
+</body>
+</html>
